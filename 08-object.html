@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>object</title>
+  
+</head>
+
+    <script>
+      /*
+      const product = { //product known as object and name,price known as property
+        name: 'socks',
+        price: 1090
+      };
+      console.log(product);
+      console.log(product.name);
+      console.log(product.price);
+
+      product.name = 'cotton socks';
+      console.log(product);
+
+      product.newProperty = true;
+      console.log(product);
+
+      delete product.newProperty;
+      console.log(product);
+
+
+
+      const product2 = {
+        name: 'shirt',
+        'delivery-time': '1 day',
+        rating:{
+          stars: 4.5,
+          count: 87
+        },
+        fun: function function1() { //function inside object
+          console.log('function inside object');
+        }
+      };
+      console.log(product2);
+      console.log(product2.name);
+      console.log(product2['name']);//both method are work same thing
+      //console.log(product.delevery-time);// this is show error (-) considered maths sign 
+      console.log(product2['delevery-time']);//this is write way
+
+
+      console.log(product2.rating.count);
+      product2.fun();
+
+      console.log(typeof console.log); //log is a function and console is a object
+
+
+
+      console.log(JSON.stringify(product2));
+
+      const jsonString = JSON.stringify(product2);
+      console.log(JSON.parse(jsonString));*/
+
+      //work on localStorage(save values more permanently)
+
+      //property and method
+      console.log('hello'.length); //this is property
+      console.log('hello'.toUpperCase());//this is method
+
+      const object1 = {
+        message: 'hello'
+      };
+      const object2 = object1;//copy reference
+
+      object1.message = 'GOOD JOB';
+      console.log(object1);
+      console.log(object2);
+
+      const object3 = {
+        message: 'GOOD JOB'
+      };
+      console.log(object3===object1);//this code is compare the reference not the value
+      console.log(object2===object1);
+
+
+      const object4 = {
+        message: 'GOOD JOB',
+        price: 799
+      };
+      //const message = object4.message
+      const { message,price} = object4;//destructing-easier way to take property out of an object
+      console.log(message);
+      console.log(price);
+      
+
+      //shorthand method
+      const object5 = {
+        //message: message
+        message,
+        method: function function1() {
+          console.log('method');
+        }
+
+      };
+      console.log(object5);
+      object5.method();
+
+    </script>
+</body>
+</html>

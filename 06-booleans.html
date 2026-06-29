@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>booleans</title>
+  
+</head>
+>
+    <script>
+        
+         true 
+         false
+         console.log(typeof 'true');//output show string
+         console.log(typeof true);//output show boolean
+        console.log(3 < 5);
+        console.log(3 > 5);
+        console.log(3 > 5-5);
+
+         console.log(5 == '5.00');//output true -->
+        console.log(5 === '5.00');//output false because one value is int and one value is string(in java script use === for comperision)
+        /*
+
+        if (true) {
+            console.log('hello');
+        }
+        else {
+            console.log('else');
+        }
+        const age = 15;
+
+        if (age >= 16) {
+            console.log('you can drive');
+
+        }
+        else if (age >= 14) {
+            console.log('Almost there'); 
+        }
+        else {
+            console.log('you can not drive');
+        } 
+          
+        if (0) {
+            console.log('truthy');
+        }
+
+        const cartQuantity =5;
+
+        if(cartQuantity) {
+            console.log('cart has products');
+        }
+        console.log(!0);
+        */
+    
+const result = true ? 'truthy' : 'fallsy'
+console.log(result);
+false && console.log('hello');//immeditiely break code not run because first condiition false (this operator known as guard operator)
+
+const message  = false && 'hello';
+console.log(message); //output show false
+const messages  = 5 && 'hello';
+
+console.log(messages);//output show hello
+
+const currency = 'EUR' || 'USD'; //output show EUR
+console.log(currency);
+    </script>
+</body>
+</html>
